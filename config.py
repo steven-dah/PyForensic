@@ -1,0 +1,18 @@
+import pathlib
+
+script_directory=pathlib.Path(__file__).parent.resolve()
+path_join=lambda base,*args:str(pathlib.Path(base).joinpath(*args))
+path_exists=lambda path:pathlib.Path(path).exists()
+dumpit_exe = path_join(script_directory, "DumpIt.exe")
+volatility_path=path_join(script_directory,"volatility")
+dumps_directory=path_join(script_directory,"dumps")
+volatility_py=path_join(volatility_path,"vol.py")
+ram_dump=path_join(script_directory,"ram.dmp")
+ram_json=path_join(script_directory,"ram.json")
+hahs_txt=path_join(script_directory,"hashs.txt")
+ips_blacklist=path_join(script_directory,"ips_blacklist.txt")
+urls_blacklist=path_join(script_directory,"urls_blacklist.txt")
+dejasvusans_ttf=path_join(script_directory, "font", "DejaVuSans.ttf")
+analysis_report=path_join(script_directory, "antivirus_analysis_report.pdf")
+proxy_blacklist=path_join(script_directory, "proxy", "proxy_blacklist.txt")
+denied_html=path_join(script_directory, "proxy", "denied.html")
