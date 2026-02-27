@@ -1,12 +1,12 @@
-PyForensic is forensic analysis software developed in Python.
+PyForensic is a forensic analysis tool developed in Python.
 
-It allows RAM memory to be extracted using the DumpIt acquisition tool, then analyzed using various plugins from the Volatility 3 framework.
+​It enables RAM extraction using the DumpIt acquisition tool, followed by analysis via various Volatility 3 framework plugins.
 
-The software also allows binaries within a directory to be analyzed, as well as IP addresses and URLs.
+​The software also analyzes directory-based binaries, as well as IP addresses and URLs.
 
-It has an MITM proxy, allowing you to intercept HTTP and HTTPS traffic in order to block malicious domains from a blacklist.
+​It features a built-in MITM proxy to intercept HTTP/HTTPS traffic and block malicious domains found on a blacklist.
 
-To function, PyForensic relies on several APIs, including MalwareBazaar, VirusTotal, AbuseIPDB, and Groq.
+​To function, PyForensic integrates several APIs, including MalwareBazaar, VirusTotal, AbuseIPDB, and Groq.
 
 **Configuration:**
 
